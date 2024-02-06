@@ -2,8 +2,8 @@
 
 /**
  * This function calculates how many years later (or how many years ago) the father's age was twice the son's age.
- * @param {*} fatherAge - Father's current age.
- * @param {*} sonAge - Son's current age.
+ * @param {Number} fatherAge - Father's current age.
+ * @param {Number} sonAge - Son's current age.
  * @returns - the number of years is returned until (after) the father’s age is (was) twice as large as the son’s age.`
  */
 
@@ -13,8 +13,8 @@ function deltaOfAge(fatherAge, sonAge) {
     }
   const ageDiff = fatherAge / sonAge;
     const ageOfPaternity = fatherAge - sonAge;
-    if (ageOfPaternity < 15) {
-        return 'Your age difference is too big for you to be the father :D';
+    if (ageOfPaternity > 15) {
+        return 'Your age difference is too big, for you to be the father :D';
     }
   const twofoldOlder = ageOfPaternity - sonAge;
   if (ageDiff > 2) {
@@ -26,4 +26,4 @@ function deltaOfAge(fatherAge, sonAge) {
       }
 }
 
-console.log(deltaOfAge(55,30));
+console.log(deltaOfAge(25, 2));

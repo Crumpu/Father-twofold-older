@@ -13,8 +13,8 @@ function deltaOfAge(fatherAge, sonAge) {
     }
   const ageDiff = fatherAge / sonAge;
     const ageOfPaternity = fatherAge - sonAge;
-    if (ageOfPaternity > 15) {
-        return 'Your age difference is too big, for you to be the father :D';
+    if (ageOfPaternity < 15) {
+        return 'You are too young, to be a father :D';
     }
   const twofoldOlder = ageOfPaternity - sonAge;
   if (ageDiff > 2) {
@@ -26,4 +26,4 @@ function deltaOfAge(fatherAge, sonAge) {
       }
 }
 
-console.log(deltaOfAge(25, 2));
+console.log(deltaOfAge(15, 2));
